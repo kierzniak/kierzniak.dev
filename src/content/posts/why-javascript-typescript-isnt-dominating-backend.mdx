@@ -1,0 +1,32 @@
+---
+title: "Why JavaScript/TypeScript Isn't Dominating Backend Development Yet"
+date: "2025-02-12"
+excerpt: "Despite all the hype around JavaScript/TypeScript for backend development, PHP still powers around 75% of web applications. Let's explore why and what might change in the future."
+tags: ["javascript", "typescript", "php", "serverless", "hosting"]
+---
+
+I've been thinking about this for a while and have noticed something interesting. Despite all the hype around JavaScript/TypeScript (Node.js) for backend development, PHP still powers around **74.9% of web applications** according to W3Techs. 43.6% of that is just WordPress, with another 31.3% coming from various other CMSs and frameworks. That's massive!
+
+So, why hasn't the JavaScript/TypeScript world taken over the backend space? I think one of the key reasons is **hosting**.
+
+## The Hosting Problem
+
+Hosting companies have long been set up to support PHP, but not Node.js. In my opinion, here's why:
+
+**PHP is typically executed on a per-request basis**, meaning it only uses memory when a request is made. In contrast, **Node.js (and frameworks like Next.js) runs as a constantly active process**, consuming memory continuously—even when there's no traffic.
+
+Imagine you're hosting 20 small applications, each requiring 200 MB of memory. With PHP, memory is only utilized when a request comes in, so you're not paying for idle resources. With Node.js, however, you'd need to allocate a full 4GB of memory upfront for all these applications, regardless of actual usage. This leads to higher costs and less efficient resource management.
+
+## The Serverless Solution
+
+The good news is, the JavaScript ecosystem is catching up, and we might soon reach a similar hosting efficiency as PHP. Instead of spinning up a new server for each application, we will be handling requests with files—much like PHP does with `index.php`.
+
+How, you might ask? **Serverless functions**. They are essentially files that handle requests in the same way PHP does with `index.php`. Serverless functions spin up only when they're needed, meaning you no longer have to pay for idle memory, making it a more cost-effective solution.
+
+With major platforms like **Supabase, Cloudflare, and AWS** pushing serverless architectures, we're likely to see a new generation of frameworks and CMSs that integrate these features. This could level the playing field by providing cheap, all-in-one hosting solutions that work well for small, medium, and large applications. In my opinion, small and medium applications are especially useful for boosting the popularity of the JavaScript/TypeScript ecosystem.
+
+## Conclusion
+
+While JavaScript/TypeScript offers many advantages for modern development, the current hosting model for Node.js remains a significant barrier compared to PHP's on-demand memory usage. That said, as serverless technology continues to mature, we might finally see the shift towards a more balanced ecosystem.
+
+What are your thoughts? Have you faced similar challenges with Node.js hosting? Do you see serverless functions as the game-changer we need?
