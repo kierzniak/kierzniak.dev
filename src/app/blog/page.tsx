@@ -46,7 +46,7 @@ export default function BlogPage() {
                   {post.excerpt}
                 </p>
                 {post.tags && (
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {post.tags.map((tag) => (
                       <span
                         key={tag}

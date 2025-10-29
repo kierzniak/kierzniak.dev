@@ -49,7 +49,7 @@ export default async function BlogPostPage({
       <Header />
 
       {/* Main Content */}
-      <main className="px-8 py-16 max-w-4xl mx-auto flex-1">
+      <main className="px-8 py-8 lg:py-16 max-w-4xl mx-auto flex-1">
         <Link
           href="/blog"
           className="inline-block text-sm text-[#a3a3a3] hover:text-[#E1F748] transition-colors mb-8"
@@ -60,12 +60,14 @@ export default async function BlogPostPage({
         <article>
           <header className="mb-12">
             <h1 className="text-4xl mb-4 font-light">{post.title}</h1>
-            <div className="flex items-center gap-4 text-sm text-[#666666]">
-              <time dateTime={post.date}>{post.date}</time>
+            <div className="flex gap-4 text-sm text-[#666666]">
+              <div className="flex-shrink-0">
+                <time dateTime={post.date}>{post.date}</time>
+              </div>
               {post.tags && (
                 <>
-                  <span>·</span>
-                  <div className="flex gap-2">
+                  <div>·</div>
+                  <div className="flex flex-wrap gap-2">
                     {post.tags.map((tag) => (
                       <span key={tag}>#{tag}</span>
                     ))}

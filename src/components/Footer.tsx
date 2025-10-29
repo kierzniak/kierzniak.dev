@@ -2,11 +2,11 @@ export default function Footer() {
   return (
     <footer className="w-full mt-auto">
       <div className="mx-8 border-t border-[#333333]">
-        <div className="w-full max-w-7xl px-8 py-8 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-          <div className="text-sm text-[#666666]">
+        <div className="w-full max-w-7xl py-8 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-24">
+          <div className="text-sm text-[#666666] order-2 lg:order-1">
             © 2025 kierzniak.dev
           </div>
-          <nav className="flex gap-6 text-sm">
+          <nav className="flex gap-6 text-sm order-1 lg:order-2">
             <a
               href="mailto:hello@kierzniak.dev"
               className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors"
