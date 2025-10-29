@@ -4,6 +4,7 @@ import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import BarChart from "@/components/BarChart";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -125,6 +126,7 @@ export default async function BlogPostPage({
                 strong: ({ children }) => (
                   <strong className="text-white font-semibold">{children}</strong>
                 ),
+                BarChart,
               }}
             />
           </div>
