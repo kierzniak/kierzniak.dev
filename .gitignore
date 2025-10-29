@@ -20,6 +20,11 @@
 # production
 /build
 
+# icons
+src/app/favicon.ico
+src/app/icon.png
+src/app/apple-icon.png
+
 # misc
 .DS_Store
 *.pem
