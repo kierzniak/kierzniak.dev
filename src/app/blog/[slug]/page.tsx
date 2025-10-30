@@ -52,7 +52,7 @@ export default async function BlogPostPage({
       <main className="px-8 py-8 lg:py-16 max-w-4xl mx-auto flex-1">
         <Link
           href="/blog"
-          className="inline-block text-sm text-[#a3a3a3] hover:text-[#E1F748] transition-colors mb-8"
+          className="inline-block text-sm text-[#7a7a7a] hover:text-[#c4d600] transition-colors mb-8"
         >
           ← Back to blog
         </Link>
@@ -60,7 +60,7 @@ export default async function BlogPostPage({
         <article>
           <header className="mb-12">
             <h1 className="text-4xl mb-4 font-light">{post.title}</h1>
-            <div className="flex gap-4 text-sm text-[#666666]">
+            <div className="flex gap-4 text-sm text-[#7a7a7a]">
               <div className="flex-shrink-0">
                 <time dateTime={post.date}>{post.date}</time>
               </div>
@@ -91,34 +91,34 @@ export default async function BlogPostPage({
                   <h3 className="text-xl font-light mb-3 mt-6 text-white">{children}</h3>
                 ),
                 p: ({ children }) => (
-                  <p className="text-[#a3a3a3] mb-4 leading-relaxed">{children}</p>
+                  <p className="text-[#7a7a7a] mb-4 leading-relaxed">{children}</p>
                 ),
                 ul: ({ children }) => (
-                  <ul className="list-disc list-inside text-[#a3a3a3] mb-4 space-y-2">{children}</ul>
+                  <ul className="list-disc list-inside text-[#7a7a7a] mb-4 space-y-2">{children}</ul>
                 ),
                 ol: ({ children }) => (
-                  <ol className="list-decimal list-inside text-[#a3a3a3] mb-4 space-y-2">{children}</ol>
+                  <ol className="list-decimal list-inside text-[#7a7a7a] mb-4 space-y-2">{children}</ol>
                 ),
                 li: ({ children }) => (
-                  <li className="text-[#a3a3a3]">{children}</li>
+                  <li className="text-[#7a7a7a]">{children}</li>
                 ),
                 a: ({ href, children }) => (
-                  <a href={href} className="text-[#E1F748] hover:underline" target="_blank" rel="noopener noreferrer">
+                  <a href={href} className="text-[#c4d600] hover:underline" target="_blank" rel="noopener noreferrer">
                     {children}
                   </a>
                 ),
                 code: ({ children }) => (
-                  <code className="bg-[#0a0a0a] border border-[#333333] px-2 py-1 text-sm text-[#E1F748]">
+                  <code className="bg-[#1e1e1e] border border-[#4a4a4a] px-2 py-1 text-sm text-[#c4d600]">
                     {children}
                   </code>
                 ),
                 pre: ({ children }) => (
-                  <pre className="bg-[#0a0a0a] border border-[#333333] p-4 mb-4 overflow-x-auto">
+                  <pre className="bg-[#1e1e1e] border border-[#4a4a4a] p-4 mb-4 overflow-x-auto">
                     {children}
                   </pre>
                 ),
                 blockquote: ({ children }) => (
-                  <blockquote className="border-l-4 border-[#333333] pl-4 italic text-[#a3a3a3] mb-4">
+                  <blockquote className="border-l-4 border-[#4a4a4a] pl-4 italic text-[#7a7a7a] mb-4">
                     {children}
                   </blockquote>
                 ),

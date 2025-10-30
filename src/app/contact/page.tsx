@@ -16,57 +16,57 @@ export default function ContactPage() {
         {/* Left Column */}
         <section>
             <h1 className="text-4xl mb-6 font-light">Contact</h1>
-            <p className="text-[#a3a3a3]">
+            <p className="text-[#7a7a7a]">
               Feel free to reach out for projects, collaborations, or just to say hi.
             </p>
           </section>
 
           {/* Right Column */}
           <div className="space-y-12">
-            <section className="border-t border-[#333333] pt-8">
+            <section className="border-t border-[#4a4a4a] pt-8">
               <h2 className="text-2xl mb-6 font-light">Email</h2>
               <a
                 href="mailto:hello@kierzniak.dev"
-                className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors text-lg"
+                className="text-[#7a7a7a] hover:text-[#c4d600] transition-colors text-lg"
               >
                 hello@kierzniak.dev
               </a>
             </section>
 
-            <section className="border-t border-[#333333] pt-8">
+            <section className="border-t border-[#4a4a4a] pt-8">
               <h2 className="text-2xl mb-6 font-light">Social Media</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-sm text-[#666666] mb-1">GitHub</h3>
+                  <h3 className="text-sm text-[#7a7a7a] mb-1">GitHub</h3>
                   <a
                     href="https://github.com/kierzniak"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors"
+                    className="text-[#7a7a7a] hover:text-[#c4d600] transition-colors"
                   >
                     github.com/kierzniak
                   </a>
                 </div>
 
                 <div>
-                  <h3 className="text-sm text-[#666666] mb-1">LinkedIn</h3>
+                  <h3 className="text-sm text-[#7a7a7a] mb-1">LinkedIn</h3>
                   <a
                     href="https://linkedin.com/in/kierzniak"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors"
+                    className="text-[#7a7a7a] hover:text-[#c4d600] transition-colors"
                   >
                     linkedin.com/in/kierzniak
                   </a>
                 </div>
 
                 <div>
-                  <h3 className="text-sm text-[#666666] mb-1">X</h3>
+                  <h3 className="text-sm text-[#7a7a7a] mb-1">X</h3>
                   <a
                     href="https://x.com/kierzniak"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors"
+                    className="text-[#7a7a7a] hover:text-[#c4d600] transition-colors"
                   >
                     x.com/kierzniak
                   </a>
@@ -74,14 +74,14 @@ export default function ContactPage() {
               </div>
             </section>
 
-            <section className="border-t border-[#333333] pt-8">
+            <section className="border-t border-[#4a4a4a] pt-8">
               <h2 className="text-2xl mb-6 font-light">Location</h2>
-              <p className="text-[#a3a3a3]">Remote</p>
+              <p className="text-[#7a7a7a]">Remote</p>
             </section>
 
-            <section className="border-t border-[#333333] pt-8">
+            <section className="border-t border-[#4a4a4a] pt-8">
               <h2 className="text-2xl mb-6 font-light">Availability</h2>
-              <p className="text-[#a3a3a3]">
+              <p className="text-[#7a7a7a]">
                 Currently available for freelance projects and consulting work.
               </p>
             </section>

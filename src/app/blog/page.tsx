@@ -20,7 +20,7 @@ export default function BlogPage() {
         {/* Left Column - Header */}
         <section>
           <h1 className="text-4xl mb-6 font-light">Blog</h1>
-          <p className="text-[#a3a3a3]">
+          <p className="text-[#7a7a7a]">
             Thoughts on web development, programming, and technology.
           </p>
         </section>
@@ -32,17 +32,17 @@ export default function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className={`block transition-colors group ${index > 0 ? 'border-t border-[#333333] pt-6' : ''}`}
+                className={`block transition-colors group ${index > 0 ? 'border-t border-[#4a4a4a] pt-6' : ''}`}
               >
                 <div className="flex justify-between items-start mb-2">
-                  <h2 className="text-xl font-normal group-hover:text-[#E1F748] transition-colors">
+                  <h2 className="text-xl font-normal group-hover:text-[#c4d600] transition-colors">
                     {post.title}
                   </h2>
-                  <span className="text-sm text-[#666666] whitespace-nowrap ml-4">
+                  <span className="text-sm text-[#7a7a7a] whitespace-nowrap ml-4">
                     {post.date}
                   </span>
                 </div>
-                <p className="text-[#a3a3a3] text-sm mb-3">
+                <p className="text-[#7a7a7a] text-sm mb-3">
                   {post.excerpt}
                 </p>
                 {post.tags && (
@@ -50,7 +50,7 @@ export default function BlogPage() {
                     {post.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs text-[#666666] border border-[#333333] px-2 py-1"
+                        className="text-xs text-[#7a7a7a] border border-[#4a4a4a] px-2 py-1"
                       >
                         {tag}
                       </span>

@@ -18,7 +18,7 @@ export default function AboutPage() {
             <section>
               <h1 className="text-4xl mb-6 font-light">About</h1>
               <h2 className="text-2xl mb-6 font-light">Background</h2>
-              <div className="text-[#a3a3a3] space-y-4">
+              <div className="text-[#7a7a7a] space-y-4">
                 <p>
                   I&apos;m a full stack web developer with a passion for building clean,
                   efficient, and scalable applications. I specialize in modern web
@@ -32,7 +32,7 @@ export default function AboutPage() {
               </div>
             </section>
 
-            <section className="border-t border-[#333333] pt-16">
+            <section className="border-t border-[#4a4a4a] pt-16">
               <h2 className="text-2xl mb-6 font-light">Tech Stack</h2>
 
               <div className="space-y-8">
@@ -42,7 +42,7 @@ export default function AboutPage() {
                     {["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js"].map((tech) => (
                       <span
                         key={tech}
-                        className="text-sm text-[#a3a3a3] border border-[#333333] px-3 py-1"
+                        className="text-sm text-[#7a7a7a] border border-[#4a4a4a] px-3 py-1"
                       >
                         {tech}
                       </span>
@@ -56,7 +56,7 @@ export default function AboutPage() {
                     {["Node.js", "Express", "NestJS", "PostgreSQL", "MongoDB", "Redis"].map((tech) => (
                       <span
                         key={tech}
-                        className="text-sm text-[#a3a3a3] border border-[#333333] px-3 py-1"
+                        className="text-sm text-[#7a7a7a] border border-[#4a4a4a] px-3 py-1"
                       >
                         {tech}
                       </span>
@@ -70,7 +70,7 @@ export default function AboutPage() {
                     {["Docker", "AWS", "GitHub Actions", "Git", "Linux"].map((tech) => (
                       <span
                         key={tech}
-                        className="text-sm text-[#a3a3a3] border border-[#333333] px-3 py-1"
+                        className="text-sm text-[#7a7a7a] border border-[#4a4a4a] px-3 py-1"
                       >
                         {tech}
                       </span>
@@ -85,33 +85,33 @@ export default function AboutPage() {
           <section>
             <h2 className="text-2xl mb-8 font-light">What I Do</h2>
             <div className="space-y-8">
-              <div className="border-t border-[#333333] pt-6">
+              <div className="border-t border-[#4a4a4a] pt-6">
                 <h3 className="text-lg mb-2 text-white">Web Application Development</h3>
-                <p className="text-[#a3a3a3] text-sm">
+                <p className="text-[#7a7a7a] text-sm">
                   Building modern, responsive web applications using the latest
                   frameworks and best practices.
                 </p>
               </div>
 
-              <div className="border-t border-[#333333] pt-6">
+              <div className="border-t border-[#4a4a4a] pt-6">
                 <h3 className="text-lg mb-2 text-white">API Design & Development</h3>
-                <p className="text-[#a3a3a3] text-sm">
+                <p className="text-[#7a7a7a] text-sm">
                   Creating RESTful and GraphQL APIs that are scalable, secure,
                   and well-documented.
                 </p>
               </div>
 
-              <div className="border-t border-[#333333] pt-6">
+              <div className="border-t border-[#4a4a4a] pt-6">
                 <h3 className="text-lg mb-2 text-white">System Architecture</h3>
-                <p className="text-[#a3a3a3] text-sm">
+                <p className="text-[#7a7a7a] text-sm">
                   Designing and implementing system architectures that support
                   business growth and technical requirements.
                 </p>
               </div>
 
-              <div className="border-t border-[#333333] pt-6">
+              <div className="border-t border-[#4a4a4a] pt-6">
                 <h3 className="text-lg mb-2 text-white">Performance Optimization</h3>
-                <p className="text-[#a3a3a3] text-sm">
+                <p className="text-[#7a7a7a] text-sm">
                   Analyzing and improving application performance for better
                   user experience and resource efficiency.
                 </p>

@@ -16,7 +16,7 @@ export default function Home() {
           <h1 className="text-4xl mb-6 font-light">
             Full Stack Web Developer
           </h1>
-          <div className="text-[#a3a3a3] space-y-4">
+          <div className="text-[#7a7a7a] space-y-4">
             <p>
               Building scalable web applications with modern technologies.
               Passionate about clean code, user experience, and continuous learning.
@@ -36,17 +36,17 @@ export default function Home() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className={`block transition-colors group ${index > 0 ? 'border-t border-[#333333] pt-6' : ''}`}
+                className={`block transition-colors group ${index > 0 ? 'border-t border-[#4a4a4a] pt-6' : ''}`}
               >
                 <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-xl font-normal group-hover:text-[#E1F748] transition-colors">
+                  <h3 className="text-xl font-normal group-hover:text-[#c4d600] transition-colors">
                     {post.title}
                   </h3>
-                  <span className="text-sm text-[#666666] whitespace-nowrap ml-4">
+                  <span className="text-sm text-[#7a7a7a] whitespace-nowrap ml-4">
                     {post.date}
                   </span>
                 </div>
-                <p className="text-[#a3a3a3] text-sm">
+                <p className="text-[#7a7a7a] text-sm">
                   {post.excerpt}
                 </p>
               </Link>
@@ -55,7 +55,7 @@ export default function Home() {
 
           <Link
             href="/blog"
-            className="inline-block mt-12 text-sm hover:text-[#E1F748] transition-colors"
+            className="inline-block mt-12 text-sm hover:text-[#c4d600] transition-colors"
           >
             View all posts →
           </Link>
