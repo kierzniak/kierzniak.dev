@@ -61,7 +61,7 @@ export async function GET() {
           controller.enqueue(
             encoder.encode(createSSEMessage({ type: 'heartbeat', timestamp: Date.now() }))
           );
-        } catch (error) {
+        } catch {
           // Silently handle errors
         }
       }, 2000);

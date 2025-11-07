@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { revalidatePath } from 'next/cache';
+import { revalidatePath, revalidateTag } from 'next/cache';
 import { redis, REDIS_KEYS } from '@/lib/redis';
 import { PollData, LiveUpdate } from '@/types/election';
 
@@ -15,6 +15,7 @@ export async function POST(request: NextRequest) {
       await redis.set(REDIS_KEYS.POLL_DATA, pollData);
       await redis.set(REDIS_KEYS.LAST_UPDATE_TIME, Date.now());
       revalidatePath('/', 'layout');
+      revalidateTag('election-pool-data');
 
       return NextResponse.json({
         success: true,
@@ -32,6 +33,7 @@ export async function POST(request: NextRequest) {
       await redis.set(REDIS_KEYS.LIVE_UPDATES, updates);
       await redis.set(REDIS_KEYS.LAST_UPDATE_TIME, Date.now());
       revalidatePath('/', 'layout');
+      revalidateTag('election-pool-data');
 
       return NextResponse.json({
         success: true,
