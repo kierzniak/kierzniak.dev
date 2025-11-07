@@ -39,7 +39,7 @@ export default function AboutPage() {
                 <div>
                   <h3 className="text-lg mb-3 text-white">Frontend</h3>
                   <div className="flex flex-wrap gap-2">
-                    {["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js"].map((tech) => (
+                    {["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "Gutenberg"].map((tech) => (
                       <span
                         key={tech}
                         className="text-sm text-[#a3a3a3] border border-[#333333] px-3 py-1"
@@ -53,7 +53,7 @@ export default function AboutPage() {
                 <div>
                   <h3 className="text-lg mb-3 text-white">Backend</h3>
                   <div className="flex flex-wrap gap-2">
-                    {["Node.js", "Express", "NestJS", "PostgreSQL", "MongoDB", "Redis"].map((tech) => (
+                    {["Node.js", "Express", "NestJS", "PHP", "Laravel", "Symfony", "WordPress", "PostgreSQL", "MongoDB", "Redis"].map((tech) => (
                       <span
                         key={tech}
                         className="text-sm text-[#a3a3a3] border border-[#333333] px-3 py-1"
