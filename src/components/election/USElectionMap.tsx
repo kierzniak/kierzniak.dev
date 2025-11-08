@@ -11,6 +11,19 @@ interface USElectionMapProps {
 
 export function USElectionMap({ pollData }: USElectionMapProps) {
   const [topology, setTopology] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if mobile on mount and window resize
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     // Fetch US map topology
@@ -54,7 +67,7 @@ export function USElectionMap({ pollData }: USElectionMapProps) {
       chart: {
         map: topology,
         backgroundColor: '#FFFFFF',
-        height: 700,
+        height: isMobile ? 400 : 700,
         animation: false,
       },
       title: {
@@ -151,11 +164,11 @@ export function USElectionMap({ pollData }: USElectionMapProps) {
         enabled: false,
       },
     };
-  }, [topology, pollData]);
+  }, [topology, pollData, isMobile]);
 
   if (!chartOptions) {
     return (
-      <div className="w-full flex items-center justify-center" style={{ height: '700px' }}>
+      <div className="w-full flex items-center justify-center" style={{ height: isMobile ? '400px' : '700px' }}>
         <div className="text-[#666666] font-serif">Loading map...</div>
       </div>
     );
