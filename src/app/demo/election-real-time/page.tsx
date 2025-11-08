@@ -57,9 +57,9 @@ export default function ElectionRealTimePage() {
   return (
     <div className="min-h-screen bg-[#F7F3EF] text-black font-serif">
       {/* Header */}
-      <header className="border-b border-[#CCCCCC] bg-white sticky top-0 z-10 shadow-sm">
+      <header className="border-b border-[#CCCCCC] bg-white md:sticky md:top-0 z-10 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-8">
-          <h1 className="text-5xl font-bold mb-2 tracking-tight leading-tight" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+          <h1 className="text-3xl md:text-5xl font-bold mb-2 tracking-tight leading-tight" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
             2024 US Presidential Election
           </h1>
           <p className="text-[#666666] text-base">
@@ -174,7 +174,7 @@ export default function ElectionRealTimePage() {
         {/* Two Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Left Column - Live Updates Feed (1/4 width) */}
-          <div className="lg:col-span-1 bg-white border border-[#CCCCCC] rounded shadow-sm p-6">
+          <div className="order-2 lg:order-1 lg:col-span-1 bg-white border border-[#CCCCCC] rounded shadow-sm p-6">
             {loading || !data ? (
               <LiveUpdatesSkeleton />
             ) : (
@@ -186,7 +186,7 @@ export default function ElectionRealTimePage() {
           </div>
 
           {/* Right Column - Map (3/4 width) */}
-          <div className="lg:col-span-3 bg-white border border-[#CCCCCC] rounded shadow-sm p-8">
+          <div className="order-1 lg:order-2 lg:col-span-3 bg-white border border-[#CCCCCC] rounded shadow-sm p-4 md:p-8">
             {loading || !pollData ? (
               <MapSkeleton />
             ) : (

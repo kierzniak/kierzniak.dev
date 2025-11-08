@@ -182,7 +182,7 @@ export default function ElectionAdminPage() {
                   Reset to Initial Data
                 </button>
               </div>
-              <div className="flex gap-12">
+              <div className="flex flex-col md:flex-row gap-4 md:gap-12">
                 <div>
                   <span className="text-[#0066CC] text-4xl font-bold" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
                     {pollData?.totalElectoralVotes.democrat || 0}
@@ -222,7 +222,7 @@ export default function ElectionAdminPage() {
 
               <div className="mb-6">
                 <label className="block text-sm font-semibold mb-2 text-[#3F4345]">Call Winner</label>
-                <div className="flex gap-4">
+                <div className="flex flex-col md:flex-row gap-4">
                   <label className="flex-1 cursor-pointer">
                     <input
                       type="radio"
