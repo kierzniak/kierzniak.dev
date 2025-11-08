@@ -104,10 +104,10 @@ export default function ElectionRealTimePage() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-6 py-8">
         {/* Electoral Vote Progress Bar */}
-        <div className="mb-8 bg-white border border-[#CCCCCC] rounded shadow-sm p-6" style={{ height: '174px' }}>
+        <div className="mb-8 bg-white border border-[#CCCCCC] rounded shadow-sm p-6 md:h-[174px]">
           {loading || !pollData ? (
             <div className="animate-pulse h-full flex flex-col justify-between">
-              <div className="flex justify-between items-center mb-3">
+              <div className="flex flex-col md:flex-row md:justify-between items-center gap-3 mb-3">
                 <div className="flex items-baseline gap-3">
                   <div className="h-9 w-16 bg-[#CCCCCC] rounded"></div>
                   <div className="h-4 w-20 bg-[#CCCCCC] rounded"></div>
@@ -125,7 +125,7 @@ export default function ElectionRealTimePage() {
             </div>
           ) : (
             <>
-              <div className="flex justify-between items-center mb-3">
+              <div className="flex flex-col md:flex-row md:justify-between items-center gap-3 mb-3">
                 <div className="flex items-baseline gap-3">
                   <span className="text-3xl font-bold text-[#0066CC]" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
                     {pollData.totalElectoralVotes.democrat}
@@ -133,11 +133,11 @@ export default function ElectionRealTimePage() {
                   <span className="text-sm text-[#666666] font-medium uppercase tracking-wide">Democrat</span>
                 </div>
                 <div className="text-sm text-[#666666] font-medium">270 to win</div>
-                <div className="flex items-baseline gap-3">
-                  <span className="text-sm text-[#666666] font-medium uppercase tracking-wide">Republican</span>
+                <div className="flex items-baseline gap-3 md:flex-row-reverse">
                   <span className="text-3xl font-bold text-[#CC0000]" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
                     {pollData.totalElectoralVotes.republican}
                   </span>
+                  <span className="text-sm text-[#666666] font-medium uppercase tracking-wide">Republican</span>
                 </div>
               </div>
 
