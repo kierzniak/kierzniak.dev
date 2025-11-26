@@ -22,7 +22,7 @@ interface BarChartProps {
 }
 
 export default function BarChart({ data, xKey, bars, title, height = 400 }: BarChartProps) {
-  const defaultColors = ['#E1F748', '#a3a3a3', '#666666', '#ffffff'];
+  const defaultColors = ['#00ffe2', '#a3a3a3', '#666666', '#ffffff'];
 
   const chartOptions = useMemo(() => {
     // Extract categories from data
