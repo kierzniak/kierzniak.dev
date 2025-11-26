@@ -39,7 +39,7 @@ export default function Home() {
                 className={`block transition-colors group ${index > 0 ? 'border-t border-[#333333] pt-6' : ''}`}
               >
                 <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-xl font-normal group-hover:text-[#E1F748] transition-colors">
+                  <h3 className="text-xl font-normal group-hover:text-[#00ffe2] transition-colors">
                     {post.title}
                   </h3>
                   <span className="text-sm text-[#666666] whitespace-nowrap ml-4">
@@ -55,7 +55,7 @@ export default function Home() {
 
           <Link
             href="/blog"
-            className="inline-block mt-12 text-sm hover:text-[#E1F748] transition-colors"
+            className="inline-block mt-12 text-sm hover:text-[#00ffe2] transition-colors"
           >
             View all posts →
           </Link>

@@ -35,7 +35,7 @@ export default function BlogPage() {
                 className={`block transition-colors group ${index > 0 ? 'border-t border-[#333333] pt-6' : ''}`}
               >
                 <div className="flex justify-between items-start mb-2">
-                  <h2 className="text-xl font-normal group-hover:text-[#E1F748] transition-colors">
+                  <h2 className="text-xl font-normal group-hover:text-[#00ffe2] transition-colors">
                     {post.title}
                   </h2>
                   <span className="text-sm text-[#666666] whitespace-nowrap ml-4">

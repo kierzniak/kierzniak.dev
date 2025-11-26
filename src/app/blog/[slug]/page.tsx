@@ -52,7 +52,7 @@ export default async function BlogPostPage({
       <main className="px-8 py-8 lg:py-16 max-w-4xl mx-auto flex-1">
         <Link
           href="/blog"
-          className="inline-block text-sm text-[#a3a3a3] hover:text-[#E1F748] transition-colors mb-8"
+          className="inline-block text-sm text-[#a3a3a3] hover:text-[#00ffe2] transition-colors mb-8"
         >
           ← Back to blog
         </Link>
@@ -103,12 +103,12 @@ export default async function BlogPostPage({
                   <li className="text-[#a3a3a3]">{children}</li>
                 ),
                 a: ({ href, children }) => (
-                  <a href={href} className="text-[#E1F748] hover:underline" target="_blank" rel="noopener noreferrer">
+                  <a href={href} className="text-[#00ffe2] hover:underline" target="_blank" rel="noopener noreferrer">
                     {children}
                   </a>
                 ),
                 code: ({ children }) => (
-                  <code className="bg-[#0a0a0a] border border-[#333333] px-2 py-1 text-sm text-[#E1F748]">
+                  <code className="bg-[#0a0a0a] border border-[#333333] px-2 py-1 text-sm text-[#00ffe2]">
                     {children}
                   </code>
                 ),
