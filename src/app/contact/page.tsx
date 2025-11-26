@@ -27,7 +27,7 @@ export default function ContactPage() {
               <h2 className="text-2xl mb-6 font-light">Email</h2>
               <a
                 href="mailto:hello@kierzniak.dev"
-                className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors text-lg"
+                className="text-[#a3a3a3] hover:text-[#00ffe2] transition-colors text-lg"
               >
                 hello@kierzniak.dev
               </a>
@@ -42,7 +42,7 @@ export default function ContactPage() {
                     href="https://github.com/kierzniak"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors"
+                    className="text-[#a3a3a3] hover:text-[#00ffe2] transition-colors"
                   >
                     github.com/kierzniak
                   </a>
@@ -54,7 +54,7 @@ export default function ContactPage() {
                     href="https://linkedin.com/in/kierzniak"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors"
+                    className="text-[#a3a3a3] hover:text-[#00ffe2] transition-colors"
                   >
                     linkedin.com/in/kierzniak
                   </a>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                     href="https://x.com/kierzniak"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors"
+                    className="text-[#a3a3a3] hover:text-[#00ffe2] transition-colors"
                   >
                     x.com/kierzniak
                   </a>

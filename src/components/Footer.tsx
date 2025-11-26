@@ -9,7 +9,7 @@ export default function Footer() {
           <nav className="flex gap-6 text-sm order-1 lg:order-2">
             <a
               href="mailto:hello@kierzniak.dev"
-              className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors"
+              className="text-[#a3a3a3] hover:text-[#00ffe2] transition-colors"
             >
               <span className="text-[#666666]">00.</span> Email
             </a>
@@ -17,7 +17,7 @@ export default function Footer() {
               href="https://github.com/kierzniak"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors"
+              className="text-[#a3a3a3] hover:text-[#00ffe2] transition-colors"
             >
               <span className="text-[#666666]">01.</span> GitHub
             </a>
@@ -25,7 +25,7 @@ export default function Footer() {
               href="https://linkedin.com/in/kierzniak"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors"
+              className="text-[#a3a3a3] hover:text-[#00ffe2] transition-colors"
             >
               <span className="text-[#666666]">02.</span> LinkedIn
             </a>
@@ -33,7 +33,7 @@ export default function Footer() {
               href="https://x.com/kierzniak"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#a3a3a3] hover:text-[#E1F748] transition-colors"
+              className="text-[#a3a3a3] hover:text-[#00ffe2] transition-colors"
             >
               <span className="text-[#666666]">03.</span> X
             </a>

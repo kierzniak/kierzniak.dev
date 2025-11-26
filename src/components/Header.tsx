@@ -11,16 +11,16 @@ export default function Header() {
             </Link>
           </div>
           <nav className="flex gap-6 text-sm">
-            <Link href="/" className="hover:text-[#E1F748] transition-colors">
+            <Link href="/" className="hover:text-[#00ffe2] transition-colors">
               <span className="text-[#666666]">00.</span> Home
             </Link>
-            <Link href="/blog" className="hover:text-[#E1F748] transition-colors">
+            <Link href="/blog" className="hover:text-[#00ffe2] transition-colors">
               <span className="text-[#666666]">01.</span> Blog
             </Link>
-            <Link href="/about" className="hover:text-[#E1F748] transition-colors">
+            <Link href="/about" className="hover:text-[#00ffe2] transition-colors">
               <span className="text-[#666666]">02.</span> About
             </Link>
-            <Link href="/contact" className="hover:text-[#E1F748] transition-colors">
+            <Link href="/contact" className="hover:text-[#00ffe2] transition-colors">
               <span className="text-[#666666]">03.</span> Contact
             </Link>
           </nav>
